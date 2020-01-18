@@ -5,7 +5,7 @@
  * GPU Accelerated JavaScript
  *
  * @version 2.4.8
- * @date Wed Jan 08 2020 07:08:29 GMT-0500 (Eastern Standard Time)
+ * @date Wed Jan 15 2020 11:06:37 GMT-0500 (Eastern Standard Time)
  *
  * @license MIT
  * The MIT License
@@ -13648,6 +13648,8 @@ const utils = {
     }
     switch (value.nodeName) {
       case 'IMG':
+        return 'HTMLImage';
+      case 'CANVAS':
         return 'HTMLImage';
       case 'VIDEO':
         return 'HTMLVideo';
